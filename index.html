@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science Suscription</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div id="logo">
+        <img src="images/sciencelogo.png" alt="" />
+    </div>
+
+    <!-- Box: image & form -->
+    <div class="container">
+
+        <!-- Magazine image -->
+        <div class="magazine">
+            <img src="images/science.jpg" alt="" />
+        </div>
+
+        <!-- Form -->
+        <div class="inscription">
+            <form method="post" action="http://www.cursos-diseno.es/mi-mail.php">
+                <table>
+                    <tr>
+                        <td class="label">Nombre*</td>
+                        <td><input type="text" name="name" required autofocus class="completo" /></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Apellidos*</td>
+                        <td><input type="text" name="surname" required class="completo" /></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Dirección*</td>
+                        <td><input type="text" name="address" required class="completo" /></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Población*</td>
+                        <td><input type="text" name="town" required class="completo" /></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Provincia*</td>
+                        <td><input type="text" name="province" required class="mediano" /></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Código Postal*</td>
+                        <td><input type="text" name="pc" minlength="5" maxlength="5" required class="pequeño" /></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Email*</td>
+                        <td><input type="email" name="email" required class="mediano" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <label>
+                                <input type="checkbox" name="accept" required /> Acepto las condiciones de
+                                la suscripción </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Suscribirse" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="hidden" name="destinatario" value="esther_lenador_tsapp1oa2021@cev.com" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
